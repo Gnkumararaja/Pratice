@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<link type="text/css" rel="stylesheet" href="Css/lifesaver.css">
+		<script src = "Js/magic.js">
+		</script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					$("img").mouseover(function(){
+					//	alert("Image ready");
+					$(this).animate({
+						width: "500px",
+						height: "500px"
+					});
+					});
+					$("img").mouseout(function(){
+					//	alert("Image ready");
+					$(this).animate({
+						width: "300px",
+						height: "300px"
+					});
+					});
+				});
+			</script>
+	</head>
+	<body>
+		
+		<div>
+		<div class="box">
+		<div class="title"><h1>What is your name</h1></div>
+		<div class="answer"><p>Kumar</p></div>
+		</div>
+		<div class="box">
+		<div class="title"><h1>What is your profession?</h1></div>
+		<div class="answer"><p>Software Developer</p></div>
+		</div>
+		<div class="box">
+			<div class="title"><h1>What is your last ctc?</h1></div>
+			<div class="answer"><p>One lakh eighty thousand</p></div>
+				
+		</div>
+		
+			<div style="clear:left"></div>
+		
+		<Label>Username</Label>
+		<input id="name">
+	<button onClick = callMe() > Click me </button>	
+	<button onClick = magicHappens() > Magic button </button>
+	<button onClick = asyn() > Async </button>
+	<button onClick = addData() > AddElement </button>
+	<button onClick = on() > On </button>
+	<button onClick = off() > Off </button>
+	<button onClick = dancing() > Dancing Feilds </button>
+	<div id="adding"></div>
+	
+	<img src="Images/imge_1.jpg" height="300px" width="300px" alt="Broken Image"/>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<script>
+		
+		var input = new sap.m.Input("idInput",{
+			
+			getValue:function(){
+				var i = sap.ui.getCore().byId("idInput").value;
+			}
+		});
+		input.placeAt("content");
+			var btn = new sap.m.Button({
+				text:"Done",
+				press:function(){
+				var b =	sap.ui.getCore().byId("idInput");
+				//var c = this.getView().byId("idInput");
+				window.alert(b);
+					
+				}
+			});
+			btn.placeAt("content");
+		</script>
+	</head>
+	<body class="sapUiBody">
+		<content>
+		<div id="content"></div>
+			</content>
+	</body>
+</html>

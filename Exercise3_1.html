@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Music data</title>
+		
+		<script>
+			function getData(){
+				var x = document.getElementById(" sn ");
+				var y = document.getElementById(" kk ");
+				var z = document.getElementById(" kk ")
+				var a = x.value;
+				var b = z.value;
+				window.alert("Welcome" +a+b);
+				var table = document.getElementById("songs");
+				var row = table.insertRow(1);
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				cell1.innerHTML = a;
+				cell2.innerHTML = b;
+				
+				var r = document.getElementById(" sn ");
+				var m = r.value;
+				document.getElementById("demo").innerHTML = m;
+			}
+		</script>
+	</head>
+	<body>
+			<Lable > Song </Lable>
+		<Input id = " sn "/>
+		<Label> Artist </Label>
+		<Input id = " kk "/>
+		<Button onclick = "getData()"> Add </Button>
+		<p id="demo"></p>
+		
+		<table id="songs">
+			<tr>
+				<th>Song</th>
+				<th>Artist</th>
+			</tr>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</body>
+</html>

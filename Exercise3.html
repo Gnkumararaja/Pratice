@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Form</title>
+		<script>
+			function getData(){
+				var a = document.getElementById(" uname ");
+				var b = a.value;
+				var c = document.getElementById( " pass " );
+				var d = c.value;
+				if(b !== "" && d!== ""){
+				
+				if(b == d){
+					window.alert(" Name and password could not be same ");
+				} else {
+					document.write(" Welcome you are successfully logged in "+b);
+				}
+					
+				} else {
+					window.alert(" Please enter name and password ");
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<Lable> Username </Lable>
+		<input id = " uname "/>
+		<Label> Password </Label>
+		<input id = " pass " type="password"/>
+		<Button onclick=" getData() "> Login </Button>
+	</body>
+</html>

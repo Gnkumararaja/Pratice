@@ -1,0 +1,67 @@
+.title{
+			color:red;
+			border:1px solid black;
+			height:150px;
+			font-family:cursive;
+			text-align:center;
+			}
+		.answer{
+			height:80px;
+			color:red;
+			background-color:yellow;
+		}
+		.box{
+			padding:5px;
+			width:200px;
+			border: 1px solid black;
+			float:left;
+		}
+		.picture{
+		float:left;
+			opacity:0.2;
+		}
+		.picture:HOVER{
+			opacity:1
+		
+		}
+		pico{
+			width:px;150px;
+			height:150px;
+			
+		}
+		.itemul{
+			float:left;
+			padding:10px;
+			border:1px solid black;
+			color:white;
+			background-color:orange;
+		}
+		.itemul:HOVER{
+			background-color:red;
+		}
+		.itemul li{
+			list-style:none;
+		}
+	/*	#unme{
+			background-color:green;
+		}*/
+		input:FOCUS{
+			background-color:brown;
+		}
+		td, th{
+			border:1px solid black;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		th{
+			background-color:green;
+			text-transform=uppercase;
+			color:white;
+		}
+		tr:nth-child(even){
+			background-color:lime;
+		}
+		tr:nth-child(odd){
+			background-color:white;
+		}
